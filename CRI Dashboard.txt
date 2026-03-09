@@ -1,0 +1,309 @@
+DATA CLEANING DOCUMENTATION Healthcare Dataset Cleaning Steps (Excel)
+
+  --------------------------------------------------
+  STEP 1: Create Backup
+  --------------------------------------------------
+  • Duplicated original sheet and renamed it as
+  “Raw_Data_Backup”
+
+  --------------------------------------------------
+
+STEP 2: Remove Text-Based Missing Values
+
+Used Find & Replace (Ctrl + H) Replaced the following with blank: 
+nan - None - N/A
+
+  --------------------------------------------------
+  STEP 3: Clean Gender Column
+  --------------------------------------------------
+  Standardized values to: - Male - Female - Unknown
+
+  Formula Used: =IF(LOWER(C2)=“male”,“Male”,
+  IF(LOWER(C2)=“female”,“Female”,“Unknown”))
+
+  Copied and pasted as values.
+  --------------------------------------------------
+
+STEP 4: Clean Smoker Column (Converted to Yes/No Only)
+
+Standardized to: - Yes - No
+
+Formula Used: =IF(OR(A2=“Y”,LOWER(A2)=“yes”),“Yes”,“No”)
+
+Copied and pasted as values.
+
+  --------------------------------------------------
+  STEP 5: Clean Diagnosis Column
+  --------------------------------------------------
+  Standardized to: - Heart Disease - Diabetes - No
+  Disease - Unknown
+
+  Formula Used: =IF(B2=““,”Unknown”,
+  IF(LOWER(B2)=“none”,“No Disease”,
+  IF(LOWER(B2)=“heart disease”,“Heart Disease”,
+  IF(LOWER(B2)=“diabetes”,“Diabetes”,“Unknown”))))
+
+  Copied and pasted as values.
+  --------------------------------------------------
+
+STEP 6: Clean Notes Column (Converted to Patient Status)
+
+Standardized to: - Follow-up Required - Checkup Due - Pending - No
+Action
+
+Formula Used: =IF(A2=““,”No Action”, IF(LOWER(A2)=“follow-up
+required”,“Follow-up Required”, IF(LOWER(A2)=“checkup due”,“Checkup
+Due”, IF(LOWER(A2)=“pending”,“Pending”,“No Action”))))
+
+Copied and pasted as values.
+
+  --------------------------------------------------
+  STEP 7: Convert Admission Date to Proper Date
+  Format
+  --------------------------------------------------
+  Used: Data → Text to Columns → Date → DMY
+
+  Formatted as Short Date.
+  --------------------------------------------------
+
+STEP 8: Fill Missing Age Using Median
+
+Calculated Median: =MEDIAN(B2:B1000)
+
+Used: Ctrl + G → Special → Blanks Typed =MedianCell Pressed Ctrl + Enter
+Pasted as values.
+
+  --------------------------------------------------
+  STEP 9: Fill Missing Blood Pressure Using Median
+  --------------------------------------------------
+  =MEDIAN(D2:D1000)
+
+  Same blank filling method.
+  --------------------------------------------------
+
+STEP 10: Fill Missing Cholesterol Using Median
+
+=MEDIAN(E2:E1000)
+
+Same blank filling method.
+
+  --------------------------------------------------
+  STEP 11: Fill Missing BMI Using Median
+  --------------------------------------------------
+  =MEDIAN(F2:F1000)
+
+  Same blank filling method.
+  --------------------------------------------------
+
+STEP 12: Remove Duplicates
+
+Data → Remove Duplicates Selected: Patient_ID
+
+  --------------------------------------------------
+  STEP 13: Applied Data Validation
+  --------------------------------------------------
+  Smoker: Yes,No
+
+  Diagnosis: Heart Disease,Diabetes,No
+  Disease,Unknown
+
+  Patient Status: Follow-up Required,Checkup
+  Due,Pending,No Action
+
+
+--------------------------------------------------
+DASHBOARD CREATION DOCUMENTATION
+Power BI Dashboard Development Steps
+--------------------------------------------------
+
+STEP 14: Import Cleaned Data into Power BI
+--------------------------------------------------
+• Opened Power BI Desktop
+• Clicked Get Data → Excel / CSV
+• Selected cleaned dataset
+• Loaded only the "Cleaned Data" worksheet
+
+--------------------------------------------------
+STEP 15: Verify Data Types in Power BI
+--------------------------------------------------
+Checked and confirmed correct data types:
+
+• Patient ID → Whole Number
+• Age → Whole Number
+• Blood Pressure → Whole Number
+• Cholesterol → Whole Number
+• BMI → Decimal Number
+• Gender → Text
+• Smoker → Text
+• Diagnosis → Text
+• Admission Date → Date
+
+Corrected any mismatched data types in Data View.
+
+--------------------------------------------------
+STEP 16: Created KPI Measures
+--------------------------------------------------
+
+Total Patients:
+Total Patients = COUNT('Cleaned Data'[Patient ID])
+
+Average Age:
+Average Age = AVERAGE('Cleaned Data'[Age])
+
+Average Blood Pressure:
+Avg Blood Pressure = AVERAGE('Cleaned Data'[Blood Pressure])
+
+Average Cholesterol:
+Avg Cholesterol = AVERAGE('Cleaned Data'[Cholesterol])
+
+Average BMI:
+Avg BMI = AVERAGE('Cleaned Data'[BMI])
+
+Smoker Percentage:
+Smoker % =
+DIVIDE(
+    CALCULATE(COUNT('Cleaned Data'[Smoker]), 'Cleaned Data'[Smoker] = "Yes"),
+    COUNT('Cleaned Data'[Patient ID])
+) * 100
+
+--------------------------------------------------
+STEP 17: Created BMI Category Column
+--------------------------------------------------
+
+BMI Category =
+SWITCH(
+    TRUE(),
+    'Cleaned Data'[BMI] < 18.5, "Underweight",
+    'Cleaned Data'[BMI] < 25, "Normal",
+    'Cleaned Data'[BMI] < 30, "Overweight",
+    "Obese"
+)
+
+--------------------------------------------------
+STEP 18: Created Blood Pressure Category Column
+--------------------------------------------------
+
+BP Category =
+SWITCH(
+    TRUE(),
+    'Cleaned Data'[Blood Pressure] < 120, "Normal",
+    'Cleaned Data'[Blood Pressure] < 140, "Pre-Hypertension",
+    "High"
+)
+
+--------------------------------------------------
+STEP 19: Created Cholesterol Category Column
+--------------------------------------------------
+
+Cholesterol Category =
+SWITCH(
+    TRUE(),
+    'Cleaned Data'[Cholesterol] < 200, "Normal",
+    'Cleaned Data'[Cholesterol] < 240, "Borderline High",
+    "High"
+)
+
+--------------------------------------------------
+STEP 20: Created Age Group Column
+--------------------------------------------------
+
+Age Group =
+SWITCH(
+    TRUE(),
+    'Cleaned Data'[Age] < 30, "Below 30",
+    'Cleaned Data'[Age] < 45, "30-44",
+    'Cleaned Data'[Age] < 60, "45-59",
+    "60+"
+)
+
+Created Age Sort Column for proper sorting:
+
+Age Sort =
+SWITCH(
+    TRUE(),
+    'Cleaned Data'[Age] < 30, 1,
+    'Cleaned Data'[Age] < 45, 2,
+    'Cleaned Data'[Age] < 60, 3,
+    4
+)
+
+Used Sort by Column → Age Group sorted by Age Sort.
+
+--------------------------------------------------
+STEP 21: Created Age Histogram Using Bins
+--------------------------------------------------
+
+• Right-clicked Age column
+• Selected New Group
+• Selected Bin option
+• Set bin size (5 or 10 years)
+• Created histogram using:
+  Axis → Age (bins)
+  Values → Count of Patient ID
+
+--------------------------------------------------
+STEP 22: Designed KPI Cards Section
+--------------------------------------------------
+
+Added Card visuals for:
+• Total Patients
+• Average Age
+• Average BP
+• Average Cholesterol
+• Average BMI
+• Smoker %
+
+Formatted with:
+• Bold large numbers
+• Consistent font (Segoe UI)
+• Light background
+
+--------------------------------------------------
+STEP 23: Created Demographic Visualizations
+--------------------------------------------------
+
+• Gender Distribution → Donut Chart
+  Legend → Gender
+  Values → Count of Patient ID
+
+• Diagnosis Distribution → Clustered Bar Chart
+  Axis → Diagnosis
+  Values → Count of Patient ID
+
+--------------------------------------------------
+STEP 24: Created Risk Factor Visualizations
+--------------------------------------------------
+
+• BMI Category → Clustered Column Chart
+• BP Category → Clustered Column Chart
+• Cholesterol Category → Clustered Column Chart
+
+Axis → Category
+Values → Count of Patient ID
+
+--------------------------------------------------
+STEP 25: Created Admission Trend Analysis
+--------------------------------------------------
+
+Created Month-Year column if required:
+Month Year = FORMAT('Cleaned Data'[Admission Date], "MMM YYYY")
+
+Used Line Chart:
+Axis → Month Year
+Values → Count of Patient ID
+
+--------------------------------------------------
+STEP 26: Added Slicers for Interactivity
+--------------------------------------------------
+
+Added slicers for:
+• Gender
+• Diagnosis
+• Smoker
+• Age Group
+• BMI Category
+• BP Category
+• Cholesterol Category
+• Admission Date (Date Range)
+
+Formatted slicers as dropdown style.

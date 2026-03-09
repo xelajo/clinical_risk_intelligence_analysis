@@ -1,0 +1,201 @@
+Patient ID,Age,Gender,Blood Pressure,Cholesterol,BMI,Smoker,Diagnosis,Admission Date,Notes
+P1000,55,Female,120,220,35.4,Yes,Heart Disease,27-12-2023,No Action
+P1001,65,Male,150,180,27.8,No,None,01-01-2023,No Action
+P1002,45,Male,120,220,22.5,No,None,14-12-2023,No Action
+P1003,65,Male,140,180,35.4,No,None,09-07-2023,No Action
+P1004,65,Male,120,300,40.1,No,None,10-07-2023,Follow-up Required
+P1005,35,Female,130,200,35.4,No,Heart Disease,08-11-2023,Follow-up Required
+P1006,45,Male,150,220,22.5,No,None,27-04-2023,No Action
+P1007,45,Male,150,200,35.4,No,None,14-05-2023,Checkup Due
+P1008,45,Male,140,200,35.4,No,Diabetes,27-02-2023,No Action
+P1009,65,Male,130,220,35.4,No,Diabetes,13-02-2023,Checkup Due
+P1010,55,Male,140,220,30,Yes,None,22-06-2023,Checkup Due
+P1011,45,Male,120,300,35.4,No,None,09-06-2023,No Action
+P1012,55,Male,160,180,27.8,Yes,Diabetes,22-06-2023,No Action
+P1013,65,Female,120,250,27.8,No,None,13-11-2023,No Action
+P1014,35,Male,120,180,35.4,No,None,30-10-2023,Pending
+P1015,55,Male,140,250,30,No,Diabetes,29-05-2023,Checkup Due
+P1016,55,Male,120,180,22.5,No,None,21-03-2023,Checkup Due
+P1017,55,Female,130,220,27.8,Yes,Diabetes,01-08-2023,Follow-up Required
+P1018,35,Male,130,300,35.4,No,None,22-07-2023,Pending
+P1019,55,Female,150,250,40.1,Yes,None,09-09-2023,Follow-up Required
+P1020,65,Male,140,220,35.4,No,Diabetes,17-08-2023,Follow-up Required
+P1021,25,Male,160,180,27.8,No,None,13-06-2023,Follow-up Required
+P1022,55,Others,120,180,27.8,No,Diabetes,15-08-2023,No Action
+P1023,35,Female,120,250,35.4,Yes,Diabetes,27-05-2023,No Action
+P1024,55,Male,140,220,22.5,No,Heart Disease,20-01-2023,Follow-up Required
+P1025,65,Female,140,220,35.4,Yes,Heart Disease,16-02-2023,Pending
+P1026,55,Others,130,220,27.8,Yes,None,21-08-2023,Checkup Due
+P1027,25,Male,160,220,35.4,No,Heart Disease,01-11-2023,Pending
+P1028,25,Male,150,220,35.4,Yes,None,14-01-2023,No Action
+P1029,45,Male,130,220,30,Yes,Heart Disease,23-05-2023,No Action
+P1030,45,Male,140,220,35.4,No,Diabetes,01-01-2023,Checkup Due
+P1031,35,Female,150,220,40.1,No,None,23-02-2023,Checkup Due
+P1032,55,Others,140,300,22.5,Yes,None,16-09-2023,No Action
+P1033,55,Male,140,220,40.1,Yes,Diabetes,24-05-2023,No Action
+P1034,55,Male,120,220,35.4,Yes,None,12-01-2023,Follow-up Required
+P1035,55,Female,140,220,35.4,No,None,26-11-2023,No Action
+P1036,55,Male,160,220,35.4,Yes,Heart Disease,12-08-2023,No Action
+P1037,45,Others,150,200,40.1,No,None,29-09-2023,Pending
+P1038,55,Male,130,300,35.4,No,None,24-12-2023,Follow-up Required
+P1039,55,Male,140,220,35.4,No,Diabetes,05-06-2023,Follow-up Required
+P1040,25,Male,140,180,40.1,No,Heart Disease,08-01-2023,Follow-up Required
+P1041,45,Male,140,250,35.4,No,Heart Disease,02-05-2023,Follow-up Required
+P1042,65,Female,120,180,35.4,No,None,14-12-2023,No Action
+P1043,45,Female,120,300,30,Yes,Diabetes,13-06-2023,No Action
+P1044,65,Male,150,250,35.4,No,Diabetes,31-03-2023,Follow-up Required
+P1045,25,Male,140,300,40.1,Yes,Heart Disease,16-05-2023,Pending
+P1046,35,Female,140,220,27.8,Yes,None,05-07-2023,Checkup Due
+P1047,55,Female,160,250,35.4,No,Heart Disease,12-11-2023,Checkup Due
+P1048,25,Female,140,220,27.8,No,Diabetes,27-06-2023,Pending
+P1049,55,Others,150,180,35.4,No,None,28-01-2023,Follow-up Required
+P1050,55,Female,150,180,30,No,Heart Disease,08-08-2023,No Action
+P1051,35,Female,140,250,22.5,No,Diabetes,23-12-2023,Checkup Due
+P1052,35,Male,150,250,30,No,Heart Disease,10-02-2023,No Action
+P1053,25,Female,140,220,35.4,Yes,None,16-08-2023,No Action
+P1054,35,Female,130,300,27.8,Yes,Heart Disease,11-07-2023,Pending
+P1055,65,Female,140,220,27.8,No,Heart Disease,25-05-2023,Follow-up Required
+P1056,35,Male,140,300,40.1,No,Diabetes,20-07-2023,Checkup Due
+P1057,55,Male,150,220,27.8,No,Diabetes,31-07-2023,Follow-up Required
+P1058,55,Others,150,220,40.1,No,Diabetes,08-08-2023,Checkup Due
+P1059,55,Female,120,250,35.4,No,Heart Disease,28-08-2023,Pending
+P1060,55,Male,120,180,22.5,Yes,None,15-02-2023,Pending
+P1061,65,Male,130,300,35.4,No,None,04-02-2023,No Action
+P1062,45,Female,120,300,40.1,No,None,10-09-2023,Follow-up Required
+P1063,55,Others,140,180,22.5,Yes,Diabetes,23-03-2023,No Action
+P1064,25,Male,150,220,27.8,No,Diabetes,13-09-2023,Follow-up Required
+P1065,55,Female,120,300,27.8,No,Heart Disease,16-07-2023,No Action
+P1066,35,Others,120,220,22.5,Yes,None,30-10-2023,No Action
+P1067,55,Female,130,250,27.8,No,Diabetes,10-01-2023,No Action
+P1068,35,Female,140,180,35.4,No,None,08-11-2023,No Action
+P1069,55,Female,130,250,35.4,No,None,13-10-2023,No Action
+P1070,55,Female,140,300,22.5,Yes,Diabetes,30-08-2023,Checkup Due
+P1071,55,Female,150,300,40.1,Yes,Diabetes,08-09-2023,No Action
+P1072,35,Others,130,180,40.1,Yes,None,31-12-2023,Pending
+P1073,55,Others,120,220,22.5,Yes,None,05-01-2023,Pending
+P1074,55,Male,150,200,40.1,No,Heart Disease,29-04-2023,Checkup Due
+P1075,65,Male,150,180,40.1,No,None,16-10-2023,No Action
+P1076,35,Female,120,200,35.4,Yes,None,06-03-2023,No Action
+P1077,35,Male,130,220,40.1,No,None,26-05-2023,No Action
+P1078,55,Others,120,200,30,No,Diabetes,12-08-2023,No Action
+P1079,35,Male,140,220,35.4,Yes,None,27-08-2023,Follow-up Required
+P1080,35,Male,150,220,27.8,No,Heart Disease,26-06-2023,No Action
+P1081,55,Male,160,200,30,Yes,None,24-09-2023,Follow-up Required
+P1082,55,Male,160,220,40.1,Yes,None,07-12-2023,No Action
+P1083,55,Others,140,200,35.4,Yes,Heart Disease,09-10-2023,No Action
+P1084,55,Male,120,220,22.5,Yes,Heart Disease,04-03-2023,No Action
+P1085,55,Female,120,200,40.1,Yes,None,05-08-2023,No Action
+P1086,25,Female,140,200,35.4,No,None,08-12-2023,Follow-up Required
+P1087,55,Male,140,200,35.4,Yes,Heart Disease,11-11-2023,Pending
+P1088,65,Male,140,180,40.1,No,None,10-10-2023,Follow-up Required
+P1089,65,Others,150,180,22.5,Yes,Diabetes,26-06-2023,No Action
+P1090,35,Male,140,180,35.4,Yes,Diabetes,08-04-2023,No Action
+P1091,65,Male,120,220,35.4,Yes,Heart Disease,15-04-2023,Checkup Due
+P1092,35,Others,150,220,35.4,No,None,09-04-2023,No Action
+P1093,25,Female,140,300,35.4,No,Heart Disease,07-11-2023,Checkup Due
+P1094,55,Male,120,200,40.1,No,Heart Disease,06-01-2023,Pending
+P1095,55,Male,150,200,35.4,Yes,None,16-07-2023,Follow-up Required
+P1096,55,Male,140,220,27.8,Yes,None,17-12-2023,Follow-up Required
+P1097,65,Female,150,200,27.8,No,None,13-05-2023,Checkup Due
+P1098,25,Male,140,180,40.1,Yes,Diabetes,24-12-2023,Follow-up Required
+P1099,65,Others,140,300,35.4,No,None,16-09-2023,No Action
+P1200,55,Female,120,220,35.4,Yes,Heart Disease,27-12-2023,No Action
+P1201,65,Male,150,180,27.8,No,None,01-01-2023,No Action
+P1202,45,Male,120,220,22.5,No,None,14-12-2023,No Action
+P1203,65,Male,140,180,35.4,No,None,09-07-2023,No Action
+P1204,65,Male,120,300,40.1,No,None,10-07-2023,Follow-up Required
+P1205,35,Female,130,200,35.4,No,Heart Disease,08-11-2023,Follow-up Required
+P1206,45,Male,150,220,22.5,No,None,27-04-2023,No Action
+P1207,45,Male,150,200,35.4,No,None,14-05-2023,Checkup Due
+P1208,45,Male,140,200,35.4,No,Diabetes,27-02-2023,No Action
+P1209,65,Male,130,220,35.4,No,Diabetes,13-02-2023,Checkup Due
+P1210,55,Male,140,220,30,Yes,None,22-06-2023,Checkup Due
+P1211,45,Male,120,300,35.4,No,None,09-06-2023,No Action
+P1212,55,Male,160,180,27.8,Yes,Diabetes,22-06-2023,No Action
+P1213,65,Female,120,250,27.8,No,None,13-11-2023,No Action
+P1214,35,Male,120,180,35.4,No,None,30-10-2023,Pending
+P1215,55,Male,140,250,30,No,Diabetes,29-05-2023,Checkup Due
+P1216,55,Male,120,180,22.5,No,None,21-03-2023,Checkup Due
+P1217,55,Female,130,220,27.8,Yes,Diabetes,01-08-2023,Follow-up Required
+P1218,35,Male,130,300,35.4,No,None,22-07-2023,Pending
+P1219,55,Female,150,250,40.1,Yes,None,09-09-2023,Follow-up Required
+P1220,65,Male,140,220,35.4,No,Diabetes,17-08-2023,Follow-up Required
+P1221,25,Male,160,180,27.8,No,None,13-06-2023,Follow-up Required
+P1222,55,Others,120,180,27.8,No,Diabetes,15-08-2023,No Action
+P1223,35,Female,120,250,35.4,Yes,Diabetes,27-05-2023,No Action
+P1224,55,Male,140,220,22.5,No,Heart Disease,20-01-2023,Follow-up Required
+P1225,65,Female,140,220,35.4,Yes,Heart Disease,16-02-2023,Pending
+P1226,55,Others,130,220,27.8,Yes,None,21-08-2023,Checkup Due
+P1227,25,Male,160,220,35.4,No,Heart Disease,01-11-2023,Pending
+P1228,25,Male,150,220,35.4,Yes,None,14-01-2023,No Action
+P1229,45,Male,130,220,30,Yes,Heart Disease,23-05-2023,No Action
+P1230,45,Male,140,220,35.4,No,Diabetes,01-01-2023,Checkup Due
+P1231,35,Female,150,220,40.1,No,None,23-02-2023,Checkup Due
+P1232,55,Others,140,300,22.5,Yes,None,16-09-2023,No Action
+P1233,55,Male,140,220,40.1,Yes,Diabetes,24-05-2023,No Action
+P1234,55,Male,120,220,35.4,Yes,None,12-01-2023,Follow-up Required
+P1235,55,Female,140,220,35.4,No,None,26-11-2023,No Action
+P1236,55,Male,160,220,35.4,Yes,Heart Disease,12-08-2023,No Action
+P1237,45,Others,150,200,40.1,No,None,29-09-2023,Pending
+P1238,55,Male,130,300,35.4,No,None,24-12-2023,Follow-up Required
+P1239,55,Male,140,220,35.4,No,Diabetes,05-06-2023,Follow-up Required
+P1240,25,Male,140,180,40.1,No,Heart Disease,08-01-2023,Follow-up Required
+P1241,45,Male,140,250,35.4,No,Heart Disease,02-05-2023,Follow-up Required
+P1242,65,Female,120,180,35.4,No,None,14-12-2023,No Action
+P1243,45,Female,120,300,30,Yes,Diabetes,13-06-2023,No Action
+P1244,65,Male,150,250,35.4,No,Diabetes,31-03-2023,Follow-up Required
+P1245,25,Male,140,300,40.1,Yes,Heart Disease,16-05-2023,Pending
+P1246,35,Female,140,220,27.8,Yes,None,05-07-2023,Checkup Due
+P1247,55,Female,160,250,35.4,No,Heart Disease,12-11-2023,Checkup Due
+P1248,25,Female,140,220,27.8,No,Diabetes,27-06-2023,Pending
+P1249,55,Others,150,180,35.4,No,None,28-01-2023,Follow-up Required
+P1250,55,Female,150,180,30,No,Heart Disease,08-08-2023,No Action
+P1251,35,Female,140,250,22.5,No,Diabetes,23-12-2023,Checkup Due
+P1252,35,Male,150,250,30,No,Heart Disease,10-02-2023,No Action
+P1253,25,Female,140,220,35.4,Yes,None,16-08-2023,No Action
+P1254,35,Female,130,300,27.8,Yes,Heart Disease,11-07-2023,Pending
+P1255,65,Female,140,220,27.8,No,Heart Disease,25-05-2023,Follow-up Required
+P1256,35,Male,140,300,40.1,No,Diabetes,20-07-2023,Checkup Due
+P1257,55,Male,150,220,27.8,No,Diabetes,31-07-2023,Follow-up Required
+P1258,55,Others,150,220,40.1,No,Diabetes,08-08-2023,Checkup Due
+P1259,55,Female,120,250,35.4,No,Heart Disease,28-08-2023,Pending
+P1260,55,Male,120,180,22.5,Yes,None,15-02-2023,Pending
+P1261,65,Male,130,300,35.4,No,None,04-02-2023,No Action
+P1262,45,Female,120,300,40.1,No,None,10-09-2023,Follow-up Required
+P1263,55,Others,140,180,22.5,Yes,Diabetes,23-03-2023,No Action
+P1264,25,Male,150,220,27.8,No,Diabetes,13-09-2023,Follow-up Required
+P1265,55,Female,120,300,27.8,No,Heart Disease,16-07-2023,No Action
+P1266,35,Others,120,220,22.5,Yes,None,30-10-2023,No Action
+P1267,55,Female,130,250,27.8,No,Diabetes,10-01-2023,No Action
+P1268,35,Female,140,180,35.4,No,None,08-11-2023,No Action
+P1269,55,Female,130,250,35.4,No,None,13-10-2023,No Action
+P1270,55,Female,140,300,22.5,Yes,Diabetes,30-08-2023,Checkup Due
+P1271,55,Female,150,300,40.1,Yes,Diabetes,08-09-2023,No Action
+P1272,35,Others,130,180,40.1,Yes,None,31-12-2023,Pending
+P1273,55,Others,120,220,22.5,Yes,None,05-01-2023,Pending
+P1274,55,Male,150,200,40.1,No,Heart Disease,29-04-2023,Checkup Due
+P1275,65,Male,150,180,40.1,No,None,16-10-2023,No Action
+P1276,35,Female,120,200,35.4,Yes,None,06-03-2023,No Action
+P1277,35,Male,130,220,40.1,No,None,26-05-2023,No Action
+P1278,55,Others,120,200,30,No,Diabetes,12-08-2023,No Action
+P1279,35,Male,140,220,35.4,Yes,None,27-08-2023,Follow-up Required
+P1280,35,Male,150,220,27.8,No,Heart Disease,26-06-2023,No Action
+P1281,55,Male,160,200,30,Yes,None,24-09-2023,Follow-up Required
+P1282,55,Male,160,220,40.1,Yes,None,07-12-2023,No Action
+P1283,55,Others,140,200,35.4,Yes,Heart Disease,09-10-2023,No Action
+P1284,55,Male,120,220,22.5,Yes,Heart Disease,04-03-2023,No Action
+P1285,55,Female,120,200,40.1,Yes,None,05-08-2023,No Action
+P1286,25,Female,140,200,35.4,No,None,08-12-2023,Follow-up Required
+P1287,55,Male,140,200,35.4,Yes,Heart Disease,11-11-2023,Pending
+P1288,65,Male,140,180,40.1,No,None,10-10-2023,Follow-up Required
+P1289,65,Others,150,180,22.5,Yes,Diabetes,26-06-2023,No Action
+P1290,35,Male,140,180,35.4,Yes,Diabetes,08-04-2023,No Action
+P1291,65,Male,120,220,35.4,Yes,Heart Disease,15-04-2023,Checkup Due
+P1292,35,Others,150,220,35.4,No,None,09-04-2023,No Action
+P1293,25,Female,140,300,35.4,No,Heart Disease,07-11-2023,Checkup Due
+P1294,55,Male,120,200,40.1,No,Heart Disease,06-01-2023,Pending
+P1295,55,Male,150,200,35.4,Yes,None,16-07-2023,Follow-up Required
+P1296,55,Male,140,220,27.8,Yes,None,17-12-2023,Follow-up Required
+P1297,65,Female,150,200,27.8,No,None,13-05-2023,Checkup Due
+P1298,25,Male,140,180,40.1,Yes,Diabetes,24-12-2023,Follow-up Required
+P1299,65,Others,140,300,35.4,No,None,16-09-2023,No Action
